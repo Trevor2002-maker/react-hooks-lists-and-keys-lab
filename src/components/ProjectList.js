@@ -7,7 +7,7 @@ function ProjectList({ projects }) {
     <div id="projects">
       <h2>My Projects</h2>
       <div id="project-list">{projects.map(project =>(
-        <ProjectItem name={project.name} about={project.about} technologies={project.technologies} />
+        <ProjectItem key={project.id} name={project.name} about={project.about} technologies={project.technologies} />
       ))}</div>
     </div>
   );
